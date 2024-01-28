@@ -49,7 +49,7 @@ const Productpage = () => {
     const addToCart =(product) => {
 
 
-
+        setData(data);
         setCart([...Cart,product]);
 
 
