@@ -66,15 +66,36 @@ const Productpage = () => {
     const removeFromCart =(product) => {
 
         const index =  Cart.findIndex((obj)=> obj.name===product.name && obj.price === product.price);
-     
+        
+        if(index === -1 ){
 
-     
-         Cart.splice(index,1);
+            if(Cart.length ===0 ){
+
+                console.log("No Product in Cart")
+            }
+
+            else{
+
+                console.log("This product is not in Cart")
+            }
+        }
+
+
+
+
+        else{
+            Cart.splice(index,1);
       
          setCart([...Cart]);
 
      
         console.log("Product removed from the cart");
+
+        }
+
+        
+     
+         
 
         
     }
