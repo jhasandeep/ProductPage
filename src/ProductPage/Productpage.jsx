@@ -10,7 +10,7 @@ const Productpage = () => {
     const [Cart,setCart] = useState([]);
 
 
-    const [data ,setData]=useState({
+    const data = {
         "data": [
             {
                 "name": "Cosmetics",
@@ -40,7 +40,7 @@ const Productpage = () => {
             }
         ]
     
-    })
+    }
 
   
     useEffect(()=>{console.log(Cart)},[Cart]);
@@ -49,7 +49,7 @@ const Productpage = () => {
     const addToCart =(product) => {
 
 
-        setData(data);
+       
         setCart([...Cart,product]);
 
 
