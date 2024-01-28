@@ -1,0 +1,15 @@
+.category >h2{
+
+ margin-left: 10px;
+}
+
+
+
+.category-items{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
